@@ -1,0 +1,18 @@
+{
+    "name": "bond",
+    "version": "1.0",
+    "manifest_version": 2,
+    "permissions": [
+        "contentSettings",
+        "declarativeContent",
+        "https://www.disneyplus.com/*",
+        "activeTab"
+      ],
+    "content_scripts": [
+        {
+            "matches":["https://www.disneyplus.com/*"],
+            "js":["bond.js"]
+        }
+    ]
+}
+
